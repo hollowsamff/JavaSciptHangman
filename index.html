@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <h1>Hangman</h1>
+  <button id="startGame">Start Game</button>
+
+  <p id="answer"></p>
+
+  <div id="gameContainer" style="">
+    <p>
+      Input a letter of the alphabet or a word into the text box and press guess.<br><br> If the letter is contained in the answer, the letter will be displayed on the page.<br><br>If you guess all the correct letters or quess the answer you will win
+      the game!
+      <br><br> If you guess a letter not contained in the answer or the wrong answer a portion of the hangman will be added.<br><br> If all the portions of the hangman are added or you run out of guessess you will lose the game
+
+    </p>
+
+    <label for="guess"><strong>Guess Answer</strong></label><br>
+    <input type="text" name="guess" id="guess" value="">
+    <button id="submitGuess">Guess</button>
+
+    <p id="answerQuessessNumber">Number of quessess remaing: 10</p>
+    <p id="quessResultMessage"></p>
+    <canvas id="canvas-id" width="150" height="100"> </canvas>
+
+    <p id="answerShow"></p>
+    <strong>Incorrect quessess:</strong>
+    <p id="incorrectQuessess" style='font-size:16px;'> </p>
+
+  </div>
+
+</body>
